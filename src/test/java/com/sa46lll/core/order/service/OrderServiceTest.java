@@ -1,7 +1,5 @@
 package com.sa46lll.core.order.service;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 import com.sa46lll.core.member.entity.Grade;
 import com.sa46lll.core.member.entity.Member;
 import com.sa46lll.core.member.service.MemberService;
