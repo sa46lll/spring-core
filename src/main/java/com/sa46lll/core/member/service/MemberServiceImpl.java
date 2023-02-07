@@ -2,11 +2,14 @@ package com.sa46lll.core.member.service;
 
 import com.sa46lll.core.member.entity.Member;
 import com.sa46lll.core.member.repository.MemberRepository;
-import com.sa46lll.core.member.repository.MemoryMemberRepository;
 
 public class MemberServiceImpl implements MemberService {
 
-    private final MemberRepository memberRepository = new MemoryMemberRepository();
+    private MemberRepository memberRepository;
+
+    public MemberServiceImpl(MemberRepository memberRepository) {
+        this.memberRepository = memberRepository;
+    }
 
     @Override
     public void join(Member member) {
